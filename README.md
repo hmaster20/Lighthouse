@@ -30,3 +30,16 @@ https://github.com/jbvmio/kafkactl
 cd ~/lighthouse/lh
 docker build -t collector .
 ```
+
+> Для тестового запуска можно выполнить команду
+> docker run -it --rm --cap-add SYS_ADMIN  collector:latest
+
+### Запускаем сервисы
+
+```shell
+cd ..
+chmod +x ./kafka_cfg/update_run.sh
+docker network create collector
+docker-compose up -d
+docker-compose ps
+```
