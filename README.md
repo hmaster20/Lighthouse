@@ -43,3 +43,10 @@ docker network create collector
 docker-compose up -d
 docker-compose ps
 ```
+
+### Выполняем настройку
+
+Смотрим состояние. Если все запустилось успешно, то
+- настриваем ClickHouse
+- настриваем Grafana
+
