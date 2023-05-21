@@ -59,3 +59,11 @@ docker-compose ps
 docker exec -it clickhouse bash
 clickhouse-client
 ```
+
+Настройка таблиц
+
+```sql
+
+--- Создаем базу
+CREATE DATABASE IF NOT EXISTS ers
+
