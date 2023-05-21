@@ -50,3 +50,12 @@ docker-compose ps
 - настриваем ClickHouse
 - настриваем Grafana
 
+
+## Настройка ClickHouse
+
+Подключаемся к базе clickhouse
+
+```shell
+docker exec -it clickhouse bash
+clickhouse-client
+```
