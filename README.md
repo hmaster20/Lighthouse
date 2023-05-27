@@ -89,3 +89,5 @@ CREATE TABLE ers.collector_consumer
 )
 ENGINE = Kafka('kafka:9092', 'collector', 'group1', 'JSONEachRow')
 SETTINGS kafka_skip_broken_messages=100, kafka_num_consumers=1;
+
+--- Создаем таблицу для хранения статистики
