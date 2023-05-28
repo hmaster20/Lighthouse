@@ -109,3 +109,6 @@ CREATE TABLE ers.collector
     `perfomance` Float32,
     `vhost` String
 )
+ENGINE = MergeTree
+ORDER BY event_date
+SETTINGS index_granularity = 8192
