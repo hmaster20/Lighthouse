@@ -91,3 +91,21 @@ ENGINE = Kafka('kafka:9092', 'collector', 'group1', 'JSONEachRow')
 SETTINGS kafka_skip_broken_messages=100, kafka_num_consumers=1;
 
 --- Создаем таблицу для хранения статистики
+CREATE TABLE ers.collector
+(
+    `event_date` Date DEFAULT toDate(event_time),
+    `event_time` DateTime DEFAULT now(),
+    `deviceType` String,
+    `page` String,
+    `first_contentful_paint` Float32,
+    `largest_contentful_paint` Float32,
+    `speed_index` Float32,
+    `total_blocking_time` Float32,
+    `cumulative_layout_shift` Float32,
+    `server_response_time` Float32,
+    `first_cpu_idle` Float32,
+    `interactive` Float32,
+    `mainthread_work_breakdown` Float32,
+    `perfomance` Float32,
+    `vhost` String
+)
