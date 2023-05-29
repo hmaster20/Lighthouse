@@ -112,3 +112,10 @@ CREATE TABLE ers.collector
 ENGINE = MergeTree
 ORDER BY event_date
 SETTINGS index_granularity = 8192
+
+--- MATERIALIZED VIEW для формирования данных в ers.collector
+--- По непонятной мне причине, это не нужно на проде, но без него на тесте идет потеря данных
+CREATE MATERIALIZED VIEW ers.consumer TO ers.collector AS
+SELECT * FROM  ers.collector_consumer;
+
+
