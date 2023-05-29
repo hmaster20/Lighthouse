@@ -119,3 +119,5 @@ CREATE MATERIALIZED VIEW ers.consumer TO ers.collector AS
 SELECT * FROM  ers.collector_consumer;
 
 
+--- Извлечь структуру таблиц
+SHOW create ers.collector
