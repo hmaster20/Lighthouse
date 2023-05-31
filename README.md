@@ -124,3 +124,7 @@ SHOW create ers.collector
 SHOW create ers.collector_consumer
 SHOW create ers.consumer
 
+--- Удаление табил выполняется команадами
+--- drop table ers.collector
+--- drop table ers.collector_consumer
+
