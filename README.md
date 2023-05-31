@@ -121,3 +121,6 @@ SELECT * FROM  ers.collector_consumer;
 
 --- Извлечь структуру таблиц
 SHOW create ers.collector
+SHOW create ers.collector_consumer
+SHOW create ers.consumer
+
