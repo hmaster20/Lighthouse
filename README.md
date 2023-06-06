@@ -130,3 +130,7 @@ SHOW create ers.consumer
 
 --- Вывести список баз
 SHOW DATABASES
+--- Вывести список таблиц из базы ers
+SHOW TABLES FROM ers
+
+```
