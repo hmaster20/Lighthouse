@@ -128,3 +128,5 @@ SHOW create ers.consumer
 --- drop table ers.collector
 --- drop table ers.collector_consumer
 
+--- Вывести список баз
+SHOW DATABASES
