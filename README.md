@@ -134,3 +134,7 @@ SHOW DATABASES
 SHOW TABLES FROM ers
 
 ```
+
+Выходим 
+CTRL + D
+
