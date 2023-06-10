@@ -148,3 +148,10 @@ CTRL + D
 # Добавляем запись в hosts
 sudo nano /etc/hosts
 192.168.56.74 kafka
+
+# Создаем файл конфигурации для kafkactl
+nano $HOME/.config/kafkactl
+contexts:
+  default:
+    brokers:
+    - 192.168.56.74:9092
