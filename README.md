@@ -155,3 +155,7 @@ contexts:
   default:
     brokers:
     - 192.168.56.74:9092
+
+# Устанавливаем kafkactl
+sudo snap install kafkactl
+
