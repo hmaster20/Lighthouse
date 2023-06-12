@@ -159,3 +159,7 @@ contexts:
 # Устанавливаем kafkactl
 sudo snap install kafkactl
 
+# Создаем каталог и скачиваем docker-compose файл
+mkdir kafka
+cd kafka/
+wget https://raw.githubusercontent.com/bitnami/containers/main/bitnami/kafka/docker-compose.yml
