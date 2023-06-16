@@ -167,3 +167,7 @@ wget https://raw.githubusercontent.com/bitnami/containers/main/bitnami/kafka/doc
 # Добавляем переменную для доступа к экземпляру в докере
 nano docker-compose.yml
 KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+
+# Запускаем и смотрим логи
+docker compose up -d
+docker compose logs -f
