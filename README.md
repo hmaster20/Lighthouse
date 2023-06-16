@@ -163,3 +163,7 @@ sudo snap install kafkactl
 mkdir kafka
 cd kafka/
 wget https://raw.githubusercontent.com/bitnami/containers/main/bitnami/kafka/docker-compose.yml
+
+# Добавляем переменную для доступа к экземпляру в докере
+nano docker-compose.yml
+KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
