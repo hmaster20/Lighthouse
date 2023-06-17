@@ -171,3 +171,12 @@ KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
 # Запускаем и смотрим логи
 docker compose up -d
 docker compose logs -f
+
+# Проверяем состояние брокера и данных топика collector
+kafkactl list brokers
+kafkactl get topics
+kafkactl describe topic collector
+kafkactl consume collector --from-beginning
+
+
+```
