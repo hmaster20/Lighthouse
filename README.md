@@ -180,3 +180,13 @@ kafkactl consume collector --from-beginning
 
 
 ```
+
+
+## Настройка Grafana
+
+1. ClickHouse 
+
+⚙️-> Data Sources -> ClickHouse
+
+Server address: clickhouse
+Server port:    9000
