@@ -190,3 +190,14 @@ kafkactl consume collector --from-beginning
 
 Server address: clickhouse
 Server port:    9000
+
+Save & test
+
+Dashboards -> Import
+
+2. Altinity  
+
+URL:    http://192.168.56.74:8123
+Access: Server (default)
+
+Save & test
