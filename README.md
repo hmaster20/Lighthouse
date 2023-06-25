@@ -201,3 +201,18 @@ URL:    http://192.168.56.74:8123
 Access: Server (default)
 
 Save & test
+
+
+
+
+
+
+---
+
+### Дополнение
+
+```shell
+# Инспектирование точек монтирования
+docker inspect broker|jq '.[].Mounts[] | .Type ,.Destination'
+docker inspect broker|jq '.[].Mounts '
+```
