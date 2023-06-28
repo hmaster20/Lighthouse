@@ -216,3 +216,8 @@ Save & test
 docker inspect broker|jq '.[].Mounts[] | .Type ,.Destination'
 docker inspect broker|jq '.[].Mounts '
 ```
+
+Для каталога kafka возможно появление ошибки из-за проблем с правами
+
+volumes:
+  - ./zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
