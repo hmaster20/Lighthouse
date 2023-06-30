@@ -221,3 +221,7 @@ docker inspect broker|jq '.[].Mounts '
 
 volumes:
   - ./zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
+
+Решением може стать измнение прав каталога
+Please make sure container has write permission on the host directory:
+chown -R 1000:1000  ./zk-single-kafka-single/kafka1/data 
